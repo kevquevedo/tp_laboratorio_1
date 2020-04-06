@@ -1,12 +1,12 @@
 /*
  ============================================================================
- Name        : Ejercicio20.c
+ Name        : Ejercicio21.c
  Author      : Kevin Quevedo
  Version     : 1.0
  Folder		 : TrabajosExtras
  Copyright   : Your copyright notice
- Description : Hacer el programa que imprima todos los números naturales
- 	 	 	   que hay desde la unidad hasta un número que introducimos por teclado.
+ Description : Hacer el programa que nos permita contar los múltiplos
+ 	 	 	   de 3 desde la unidad hasta un número que introducimos por teclado .
  ============================================================================
  */
 
@@ -17,14 +17,16 @@ int main(void) {
 
 	setbuf(stdout, NULL);
 	int numero;
-	int i;
+	int multiplo=0;
 
 	printf("Ingrese un numero: ");
 	fflush(stdin);
 	scanf("%d",&numero);
 
-	for(i=1;i<numero;i++){
-		printf("%d, ",i);
+	multiplo=3;
+	while(multiplo<=numero){
+		printf("%d,",multiplo);
+		multiplo+=3;
 	}
 	return EXIT_SUCCESS;
 }
