@@ -94,7 +94,7 @@ int main(void) {
 				printf("\nEl factorial de %.2f es: %.2f y El factorial de %.2f es: %.2f",A,valor,B,valor2);
 			}
 			break;
-	}
-	return EXIT_SUCCESS; //Fin del programa.
+	} //Fin del Switch.
+	return EXIT_SUCCESS;
 }
 
