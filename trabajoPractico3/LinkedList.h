@@ -1,11 +1,4 @@
 /*
- * LinkedList.h
- *
- *  Created on: 5 jun. 2020
- *      Author: VOPKEQUE
- */
-
-/*
     utest example : Unit test examples.
     Copyright (C) <2018>  <Mauricio Davila>
 
@@ -22,9 +15,9 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-#ifndef LINKEDLIST_H_
-#define LINKEDLIST_H_
 
+#ifndef __LINKEDLIST
+#define __LINKEDLIST
 struct Node
 {
     void* pElement;
@@ -36,8 +29,9 @@ struct LinkedList
     Node* pFirstNode;
     int size;
 }typedef LinkedList;
+#endif
 
-#endif /* LINKEDLIST_H_ */
+
 
 //Publicas
 LinkedList* ll_newLinkedList(void);
