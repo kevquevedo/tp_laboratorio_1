@@ -32,10 +32,9 @@ int main(void)
 	setbuf(stdout, NULL);
     int opcion;
     int auxiliar;
-    void* pElementAuxiliar = NULL;
     LinkedList* listaEmpleados = ll_newLinkedList();//Crea una lista dinamica.
     LinkedList* listaClonada = NULL;
-    LinkedList* subLista = ll_newLinkedList();//Crea una lista dinamica.
+    LinkedList* subLista = NULL;
 	do
 	{
 		if( !utn_getNumberInt(&opcion, "Por favor, ingrese una opción: " // Obtiene un numero, que le asigna una "opción" para que el pgm prosiga segun el numero indicado.
